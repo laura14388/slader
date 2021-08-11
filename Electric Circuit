@@ -1,0 +1,143 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 1:
+
+**Electric Circuit: Solve for the charge $\boldsymbol{Q(t)}$ and the current $\boldsymbol{Q(t)}$  at time $\boldsymbol{t}$ after the switch is closed.**
+$$\begin{array}{c|c}
+\begin{aligned}
+&I=\frac{dQ}{dt}\\
+&R\frac{dQ}{dt}+\frac{1}{C}Q=E\\
+&Q_o=0.05
+\end{aligned}&
+\begin{aligned}
+R&=10\text{ ohms}\\
+c&=0.02 \text{ farad}\\
+Q_o&=0.05\text{ coloumb}
+\end{aligned}
+\end{array}$$
+First, solve for $Q(t)$, by solving the the differential equation using the method of separation of variables.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 2:
+**Substitute the given to the equation:**
+$$\begin{aligned}
+R\frac{dQ}{dt}+\frac{1}{C}Q=&E \\[0.8em]
+10\cdot \frac{dQ}{dt}+\frac{1}{0.05}\cdot Q=&12\\[0.8em]
+10\cdot \frac{dQ}{dt}+50Q=&12\\[0.8em]
+10\cdot \frac{dQ}{dt}=&12-50Q\\[0.8em]
+\frac{10dQ}{12-50Q}=&dt\\[0.8em]
+\text{using separation of variables}:\\[0.8em]
+10 \int \frac{dQ}{12-50Q}=&\int dt\\[0.8em]
+\end{aligned}$$
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 3:
+**Solve the Integral using $\boldsymbol u$ substitution:**
+$$\begin{aligned}
+\text{let } u&=12-50Q \\[0.8em]
+du&=-50QdQ\\[0.8em]
+dQ&= -\frac{du}{50}\\[0.8em]
+
+
+10 \int -\frac{du}{50}&=\int dt\\[0.8em]
+-\frac{10}{50} \int \frac{du}{u}&=\int dt\\[0.8em]
+-\frac{1}{5} \ \ln |u|+c_1&=t +c_2\\[0.8em]
+
+\end{aligned}$$
+
+substitute back $u$, to obtain the actual values:
+$$\begin{aligned}
+
+ u&=12-50Q \\[0.8em]
+-\frac{1}{5} \ \ln |12-50Q|+c_1&= t + c_2\\[0.8em]
+\end{aligned}$$
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 4:
+**Arbitrary constants can be combined to simplify the equation:**
+$$\begin{aligned}
+-\frac{1}{5} \ \ln |12-50Q|&= t + c\\[0.8em]
+-\ln |12-50Q|&= 5 (t + c)\\[0.8em]
+\ln |12-50Q|&= -5t + 5c\\[0.8em]
+
+\ln |12-50Q|&= -5t+c \\[0.8em]
+\end{aligned}$$
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 5:
+
+**Set the solution in terms of $\boldsymbol{Q(t)}$:**
+
+Use the expotential identity: $e^{\ln |x|}=x$.
+$$\begin{aligned}
+e^{\ln|12-50Q|}&=e^{-5t+c}\\[0.5em]
+12-50Q&=e^{-5t}\cdot e^c\\
+\end{aligned}$$
+Combine arbitrary contants and simplify the equation.
+$$\begin{aligned}
+12-50Q&=ce^{-5t}\\[0.5em]
+-50Q&=ce^{-5t}-\frac{12}{-50}\\[0.5em]
+Q(t)&=ce^{-5t}+0.24\\[0.5em]
+\end{aligned}$$
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 6:
+
+**Solve for the constant $\boldsymbol{c}$:**
+
+Using the initial conditions:
+ when $t=0$ , $Q_o=0.05$ coulomb
+$$\begin{aligned}
+Q(t)&= ce^{-5t}+0.24\\
+0.05&= ce^{-5t}+0.24\\
+0.05&= ce^{-5(0)}+0.24\\
+0.05&= c(1)+0.24
+\end{aligned}$$
+$$\begin{aligned}
+c&=0.05-0.24 \\
+c&=-0.19\\
+\textcolor{blue}{Q(t)}&\textcolor{blue}{= -0.19e^{-5t}+0.24}\\
+\end{aligned}$$
+
+
+
+
+
+Step 7:
+
+**Solve for the constant $\boldsymbol{c}$:**
+
+**Solve for $\boldsymbol{I(t)}$**:
+
+since:
+$$I=\frac{dQ}{dt}$$
+$I(t)$ can be simply be obtained by differentiating $Q(t)$:
+$$\begin{aligned}
+Q'(t)&=-5(-0.19e^{-5t})\\
+\textcolor{blue}{I(t)}&\textcolor{blue}{=0.95 \ e^{-5t}}\\
+\end{aligned}$$
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Result:
+$Q(t)=-0.19e^{-5t}+0.24, \ \ I(t)=0.95 \ e^{-5t}$
+
+
