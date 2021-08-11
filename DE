@@ -1,0 +1,147 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 1:
+
+**The differential equation can be solved using Exact Equation.**
+
+The exact differential equation has a general form:
+
+$$\begin{aligned}
+M(x,y)+N(x,y)\frac{dy}{dx} &=0\\[0.8em]
+ 
+\end{aligned}$$
+where:
+$$\begin{aligned}M_y(x,y)=N_x(x,y)
+\end{aligned}$$
+
+
+
+Convert the given differential equation to general form:
+$$\begin{aligned}
+(\cos y-xe^y)\frac{dy}{dx}&=e^y\\[0.8em]
+-e^y+(\cos y-xe^y)\frac{dy}{dx}&=0\\[0.8em]
+\end{aligned}$$
+
+The values for $M(x, y)$ and $N(x, y)$ can be obtained:
+
+$$\begin{aligned}
+M(x,y)=-e^y \text{,  and } 
+N(x,y)=\cos y -xe^y\\
+\end{aligned}$$
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 2:
+
+**Check if the differential Equation is Exact:**
+The differential equation can only be exact if:
+$$M_y(x,y)=N_x(x,y) $$
+Checking:
+$$\begin{array}{c|c}
+\begin{aligned}
+M_y(x,y)\\
+\\
+\text{Partial diff. } M(x,y) &\text{in terms of } y:\\
+M(x,y)&=-e^y\\
+M_y(x,y)&=-(1)e^y\\
+M_y(x,y)&=-e^y
+\end{aligned}&
+\begin{aligned}
+N_x(x,y)\\
+\\
+\text{Partial diff. } N(x,y) &\text{ in terms of } x:\\
+N(x,y)&=\cos y -xe^y\\
+N_x(x,y)&=(0) -(1) e^y\\
+N_x(x,y)&=-e^y
+\end{aligned}
+\end{array}$$
+$$M_y(x,y)=N_x(x,y) $$
+Hence, the differential equation is exact.
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 3:
+
+**Solve for the Exact Equation:**
+Some arbitrary Function $F(x, y)$ exists, where:
+
+
+$$\begin{aligned}
+
+F_x =M(x,y)\\
+F_y =N(x,y)\\
+
+\end{aligned}$$
+
+The following equations can be used to solve for the exact differential equation:
+$$\begin{aligned}
+F_x(x,y)=M(x,y)&=-e^y \\
+F_y(x,y)=N(x,y)&=\cos (y)-xe^y&&&&&&(1)
+\end{aligned}$$
+
+
+Simply Integrate $F_x(x,y) =-e^y$, with respect to $x$ to find the solution to the differential equation.
+
+$$\begin{aligned}
+F(x, y)=-xe^y+H(y)\end{aligned}$$
+
+note: arbitrary function $H(y)$ exists because partial differentiating $F(x, y)$ in terms of $x$ will make $H(y)=0$.
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 4:
+
+**Solve for the value of $H(y)$:**
+Partial differentiating $F(x, y)=-xe^y+H(y)$ with respect to $y$ gives:
+$$\begin{aligned}
+F_y(x,y)&=-e^yx+H'(y)&&&&&&&(2)
+\end{aligned}$$
+
+Comparing the equation $1$ and $2$ will give the value of $H'(y)$.
+$$\begin{aligned}
+F_y(x,y)&=F_y(x,y)\\
+-e^yx+H'(y)&=\cos y-xe^y\\
+H'(y)&=\cos y\\
+\end{aligned}$$
+
+$H(y)$ can now be found by integrating $H'(y).$
+$$\begin{aligned}
+H(y)&=\int \cos y \ dy\\
+H(y)&=\sin y\\
+\end{aligned}$$
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 5:
+
+**Substitute the value of $H(y)$ to Complete the Solution:**
+
+$$\begin{aligned}
+F(x, y)=-xe^y+H(y)\\
+F(x, y)=-xe^y+\sin y
+\end{aligned}$$
+Set $F(x, y) = c$ to obtain the solution to the differential equation:
+$$\begin{aligned}
+
+c=-xe^y+\sin y
+\end{aligned}$$
+
+Set the solution in terms of $x$:
+$$\begin{aligned}x=e^{-y}\sin y + ce^{-y}\end{aligned}$$
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Result:
+$$x=e^{-y}\sin y + ce^{-y}$$
+
