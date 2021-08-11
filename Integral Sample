@@ -1,0 +1,98 @@
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 1:
+
+
+**Solve for the area within the region:**
+
+given:
+$$y=\dfrac{1}{x\sqrt {4-x^2}},\ \ \text{ interval } \big[1,\sqrt{2}\big]$$
+
+In this case, trigonometric identities can simplify the integral that contains radical expression in the denominator.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 2:
+**Using Trigonometric Substitution:**
+Let $\boldsymbol{\sqrt{4-x^2}}$ as the adjacent side to the angle $\theta$ of a right triangle with opposite side: $\boldsymbol{x}$ and hypotenuse of $\boldsymbol{2}$:
+!['slader'](https://firebasestorage.googleapis.com/v0/b/my-test-project-8241d.appspot.com/o/fig3.PNG?alt=media&token=011c9222-d678-408f-8f54-0333bf262583)
+
+Using the figure, the values for the trigonometric functions can be obtained in the following:
+$$\begin{array}{c|c}
+\begin{aligned}
+\sin \theta &=\frac{x}{2}\\
+\cos\theta &=\frac{\sqrt{4-x^2}}{2}\\
+\tan\theta&=\frac{2}{\sqrt{4-x^2}}\\
+\end{aligned}&
+\begin{aligned}
+\csc\theta&=\frac{2}{x}\\
+\sec\theta&=\frac{2}{\sqrt{4-x^2}}\\
+\cot\theta &=\frac{\sqrt{4-x^2}}{2}
+\end{aligned}
+\end{array}$$
+
+So therefore: 
+$$\begin{aligned}
+x&=2\sin\theta&2\cos\theta=\sqrt{4-x^2}\\
+dx&=2\cos\theta \ d\theta
+\end{aligned}$$
+
+Substitute the trigonometric functions, so that the resulting Integral can be easily evaluated:
+$$\begin{aligned}
+y&=\frac{dx}{x\sqrt{4-x^2}}\\[0.8em]
+y&=\frac{2\cos\theta \ d\theta}{(2\sin\theta)(2\cos\theta)}\\[0.8em]
+y&=\frac{d\theta}{2\sin\theta}\\[0.8em]
+y&=\frac{1}{2\sin\theta}\cdot d\theta\\[0.8em]
+y&=2\csc\theta \ d\theta\\
+\end{aligned}$$
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 3:
+**Solve the Integral:**
+
+Using the tables of integration, the integral can be shown that:
+$$\begin{aligned}
+2 \int \csc\theta&=-\ln | \csc\theta + \cot\theta  | +c\\[0.8em]
+
+\end{aligned}$$
+Substitute back the values in terms of x:
+$$\begin{aligned}
+&=-\frac{1}{2}\ln \left|\frac{2}{x}+\frac{\sqrt{4-x^2}}{2}\right|+c\\[0.8em]
+\end{aligned}$$
+Evaluate the integral, with limits $\big[1,\sqrt{2}\big].$
+$$\begin{aligned}
+\int_1^{\sqrt{2}}\frac{dx}{x\sqrt{4-x^2}}&=\frac{1}{2} \left[-\ln \left|\frac{2}
+{x}+\frac{\sqrt{4-x^2}}{2}\right|\right]_1^{\sqrt{2}}\\[0.8em]
+
+&=\left(-\frac{1}{2}\ln \left|\frac{2}{\sqrt{2}}+\frac{\sqrt{4-2}}{2}\right|\right)-\left(-\frac{1}{2}\ln \left|\frac{2}{1}+\frac{\sqrt{4-1}}{1}\right|\right)\\[0.8em]
+&=\left(-\frac{1}{2}\ln|1+\sqrt{2}|\right)-\left(-\frac{1}{2}\ln|2+\sqrt{3}|\right)
+\end{aligned}$$
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 4:
+**Simplify the solution using Logarithmic Identities:**
+$$\begin{aligned}
+&=\left(-\frac{1}{2}\ln|1+\sqrt{2}|\right)-\left(-\frac{1}{2}\ln|2+\sqrt{3}|\right)\\[0.8em]
+&=-\frac{1}{2}(\ln|1+\sqrt{2}|-\ln|2+\sqrt{3}|)\\[0.8em]
+&=-\frac{1}{2} \ln \left|\frac{1+\sqrt{2}}{2+\sqrt{3}}\right|\\[0.8em]
+&=-\frac{1}{2} \ln \left(\frac{1+\sqrt{2}}{2+\sqrt{3}}\right)\\
+\end{aligned}$$
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Step 5:
+
+Therefore the area is:
+$$-\dfrac{1}{2} \ln \left|\dfrac{1+\sqrt{2}}{2+\sqrt{3}}\right|$$
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Result:
+$A=-\frac{1}{2} \ln \left|\frac{1+\sqrt{2}}{2+\sqrt{3}}\right|\\$
+
+
